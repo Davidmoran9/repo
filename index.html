@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Especial - Taylor Swift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <img src="taylor.jpg" alt="Taylor Swift" class="background-image">
+    </div>
+    
+    <div class="container">
+        <h1>Elige un álbum y descubre tu mensaje</h1>
+        <p>Cada álbum de Taylor Swift tiene un significado especial, y quiero mostrarte cuál de estos refleja lo que siento por ti.</p>
+        
+        <div class="album-selector">
+            <button class="album-btn" data-album="lover">💛 Lover</button>
+            <button class="album-btn" data-album="red">❤️ Red</button>
+            <button class="album-btn" data-album="speaknow">💜 Speak Now</button>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>✨Haz clic para abrir✨</h2>
+                </div>
+                <div class="card-back">
+                    <p id="message">Selecciona un álbum para ver el mensaje.</p>
+                    <p id="album-description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="explanation">
+            <h2>¿Por qué elegí estos álbumes?</h2>
+            <p><strong>Lover:</strong> Porque contigo todo es bonito, sincero y especial. Esto es lo que siento cada vez que pienso en ti. 💕</p>
+            <p><strong>Red:</strong> Porque cuando te miro, todo es intenso y emocionante, como si cada momento contigo fuera inolvidable. ❤️</p>
+            <p><strong>Speak Now:</strong> Porque quiero ser valiente y decirte lo que realmente siento, sin miedos ni dudas. 💜</p>
+        </div>
+
+        <!-- Sección con canciones románticas -->
+        <div class="songs-section">
+            <h2>Aitana, estas canciones me hacen pensar en ti</h2>
+            <div class="song-icons">
+                <a href="https://www.youtube.com/watch?v=8xg3vE8Ie_E" target="_blank" class="song-icon">A</a>
+                <a href="https://www.youtube.com/watch?v=K-a8s8OLBSE" target="_blank" class="song-icon">I</a>
+                <a href="https://www.youtube.com/watch?v=IdneKLhsWOQ" target="_blank" class="song-icon">T</a>
+                <a href="https://www.youtube.com/watch?v=VuNIsY6JdUw" target="_blank" class="song-icon">A</a>
+                <a href="https://www.youtube.com/watch?v=ic8j13piAhQ" target="_blank" class="song-icon">N</a>
+                <a href="https://www.youtube.com/watch?v=1uRtJOxt1Po" target="_blank" class="song-icon">A</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
