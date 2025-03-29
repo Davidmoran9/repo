@@ -13,11 +13,13 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    padding: 10px;
 }
 
 h1 {
     margin-bottom: 20px;
     color: #6a0572;
+    font-size: 1.5rem;
 }
 
 .album-selector {
@@ -32,6 +34,7 @@ h1 {
     border-radius: 20px;
     font-size: 16px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .album-btn:hover {
@@ -39,10 +42,12 @@ h1 {
 }
 
 .card {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 200px;
     perspective: 1000px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .card-inner {
@@ -88,7 +93,7 @@ h1 {
 }
 
 .songs-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #6a0572;
 }
@@ -97,6 +102,8 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .song-icon {
@@ -128,4 +135,63 @@ h1 {
     font-size: 1.5rem;
     color: #6a0572;
     margin-bottom: 15px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .album-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        max-width: 250px;
+        height: 180px;
+    }
+
+    .song-icon {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    .explanation {
+        max-width: 95%;
+    }
+
+    .songs-section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .album-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .card {
+        max-width: 200px;
+        height: 160px;
+    }
+
+    .song-icon {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+
+    .songs-section h2 {
+        font-size: 1.1rem;
+    }
+
+    .explanation {
+        max-width: 90%;
+    }
 }
